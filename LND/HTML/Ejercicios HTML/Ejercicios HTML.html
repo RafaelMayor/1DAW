@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicios HTML</title>
+<style>
+  .rainbow-text {
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: bold;
+      animation: rainbowAnimation 1s linear infinite;
+  }
+
+  @keyframes rainbowAnimation {
+  0% {
+    color: #ff0000;
+  }
+  16.666% {
+    color: #ff9900;
+  }
+  33.333% {
+    color: #ffff00;
+  }
+  50% {
+    color: #00ff00;
+  }
+  66.666% {
+    color: #0000ff;
+  }
+  83.333% {
+    color: #9900ff;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div style="text-align: justify;">
+
+    <div class="rainbow-text" style="text-align: right; font-size: 28px;">
+    Rafael Martín Mayor.
+    </div>
+    <br>
+    <h1 class="rainbow-text" style="font-size: 50px;"><strong>Ejercicios HTML</strong></h1>
+
+    <h1 class="rainbow-text"><strong>Tarea Listas1</strong></h1>
+    
+    <strong>Ejercicio 1</strong>
+    
+    <p>Haz una lista ordenada de los cinco primeros países que vas a visitar en los próximos años. En la lista ordenada usarás números.</p>
+    
+    <strong>Ejercicio 2</strong>
+    
+    <p>Utilizando la lista anterior, invierte el orden de los números. Pista: reversed</p>
+    
+    <strong>Ejercicio 3</strong>
+    
+    <p>Haz una lista ordenada con letras en mayúscula de tus comidas favoritas. Pista: type A</p>
+    
+    <strong>Ejercicio 4</strong>
+    
+    <p>Utilizando la lista ordenada del ejercicio 3, ahora ordena tus comidas favoritas con números romanos en mayúscula. Pista: type l</p>
+    
+    <strong>Ejercicio 5</strong>
+    
+    <p>Haz una lista desordenada de tus películas favoritas. Utilizarás para el estilo de la lista cuadraditos negros. Pista: Type square</p>
+    
+    <strong>Ejercicio 6</strong>
+    
+    <p>Usando como ejemplo la lista desordenada del ejercicio 5, ahora utiliza como estilo de la lista puntos o circulitos negros. Pista: type disk</p>
+    
+    <strong>Ejercicio 7</strong>
+    
+    <p>Haz una lista anidada de ciudades que quieres visitar en los próximos cinco años de al menos tres países distintos</p>
+    
+    <h3>Ejercicio 1</h3>
+    <pre>
+    <ol>
+      <li>País 1</li>
+      <li>País 2</li>
+      <li>País 3</li>
+      <li>País 4</li>
+      <li>País 5</li>
+    </ol>
+    </pre>
+    
+    <h3>Ejercicio 2</h3>
+    <pre>
+    <ol reversed>
+      <li>País 5</li>
+      <li>País 4</li>
+      <li>País 3</li>
+      <li>País 2</li>
+      <li>País 1</li>
+    </ol>
+    </pre>
+    
+    <h3>Ejercicio 3</h3>
+    <pre>
+    <ol type="A">
+      <li>Comida A</li>
+      <li>Comida B</li>
+      <li>Comida C</li>
+    </ol>
+    </pre>
+    
+    <h3>Ejercicio 4</h3>
+    <pre>
+    <ol type="I">
+      <li>Comida I</li>
+      <li>Comida II</li>
+      <li>Comida III</li>
+    </ol>
+    </pre>
+    
+    <h3>Ejercicio 5</h3>
+    <pre>
+    <ul type="square">
+      <li>Película 1</li>
+      <li>Película 2</li>
+      <li>Película 3</li>
+    </ul>
+    </pre>
+    
+    <h3>Ejercicio 6</h3>
+    <pre>
+    <ul type="disc">
+      <li>Película 1</li>
+      <li>Película 2</li>
+      <li>Película 3</li>
+    </ul>
+    </pre>
+    
+    <h3>Ejercicio 7</h3>
+    <pre>
+    <ul>
+      <li>País 1
+        <ul>
+          <li>Ciudad 1</li>
+          <li>Ciudad 2</li>
+        </ul>
+      </li>
+      <li>País 2
+        <ul>
+          <li>Ciudad 3</li>
+          <li>Ciudad 4</li>
+        </ul>
+      </li>
+        <li>País 3
+        <ul>
+          <li>Ciudad 5</li>
+          <li>Ciudad 6</li>
+        </ul>
+      </li>
+    </ul>
+    </pre>
+    
+    <h1 class="rainbow-text"><strong>Tarea enlaces imágenes</strong></h1>
+
+    <div style="display: flex; justify-content: center; gap: 20px;">
+      <a href="https://es.wikipedia.org/wiki/HTML5" target="_blank">
+          <img src="html5.png" alt="HyperText Markup Language, versión 5" style="width: 350px;">
+      </a>
+  
+      <a href="https://es.wikipedia.org/wiki/CSS" target="_blank">
+          <img src="css3.png" alt="Cascading Style Sheets" style="width: 350px;">
+      </a>
+    </div>
+  
+    <div style="display: flex; justify-content: center;">
+      <a href="https://es.wikipedia.org/wiki/Google_Chrome" target="_blank">
+          <img src="chrome.jpeg" alt="Navegador Google Chrome" style="width: 350px;">
+      </a>
+    </div>
+
+    <h1 class="rainbow-text"><strong>Tarea listas combinadas</strong></h1>
+
+    <h1>Jugadores de fútbol de leyenda</h1>
+    <ul>
+      <li><h2>España</h2>
+        <ul type="square">
+          <li>Casillas</li>
+          <li>Hernández</li>
+          <li>Iniesta</li>
+        </ul>
+      </li>
+      <li><h2>Francia</h2>
+        <ul type="disc">
+          <li>Zidane</li>
+          <li>Henry</li>
+          <li>Barthez</li>
+        </ul>
+      </li>
+      <li><h2>Brasil</h2>
+        <ul>
+          <li>Ronaldo</li>
+          <li>Pelé</li>
+          <li>Ronaldinho</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h1 class="rainbow-text"><strong>Tarea Listas</strong></h1>
+
+    <div style="display: flex; flex-direction: row; width: 50%;">
+      <div style="flex: 1; padding: 10px;">
+        <h2>Aircraft Types</h2>
+        <ol type="i">
+          <li>General Aviation
+            <ol type="a">
+              <li>Single Aviation Aircraft</li>
+              <li>Dual-Engine Aircraft</li>
+            </ol>
+          </li>
+          <li>Commercial Aviation
+            <ul type="disc">
+              <li>Dual Engine</li>
+              <li>Tri-Engine</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <div style="flex: 1; padding: 10px;">
+        <ul type="square">
+          <li>A
+            <ul type="disc">
+              <li>B
+                <ol type="1">
+                  <li>C</li>
+                  <li>D</li>
+                </ol>
+              </li>
+              <li>E
+                <ul type="square">
+                  <li>F</li>
+                  <li>G</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>B</li>
+        </ul>
+      </div>
+    </div>
+
+    <h1 class="rainbow-text"><strong>Ejercicio práctico con tablas</strong></h1>
+
+    <style type="text/css">
+      .tg  {border-collapse:collapse;border-spacing:0;}
+      .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:center}
+      .tg .tg-0pky{border-color:inherit;text-align:center;vertical-align:center}
+      .tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:center}
+      </style>
+      <table class="tg">
+      <thead>
+        <tr>
+          <th class="tg-0pky"></th>
+          <th class="tg-0pky" colspan="3"><img src="100_ipod.png" width="100" height="133"></th>
+          <th class="tg-0pky" colspan="2"><img src="120_ipod.png" width="120" height="120"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-7btt">Capacidad</td>
+          <td class="tg-c3ow">2GB</td>
+          <td class="tg-c3ow">4GB</td>
+          <td class="tg-c3ow">8GB</td>
+          <td class="tg-c3ow">32GB</td>
+          <td class="tg-c3ow">2GB</td>
+        </tr>
+        <tr>
+          <td class="tg-7btt">Colores</td>
+          <td class="tg-7btt">Blanco</td>
+          <td class="tg-c3ow">
+          <ul type="disc">
+          <li>Negro</li>
+          <li>Rosa</li>
+          <li>Dorado</li>
+          </ul>
+          </td>
+          <td class="tg-7btt">Negro</td>
+          <td class="tg-c3ow" colspan="2">
+          <ul type="disc">
+          <li>Negro</li>
+          <li>Blanco</li>
+          </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="tg-7btt">Pantalla</td>
+          <td class="tg-7btt" colspan="3">3 pulgadas</td>
+          <td class="tg-7btt" colspan="2">7 pulgadas</td>
+        </tr>
+        <tr>
+          <td class="tg-7btt" rowspan="2">Tiempo de carga</td>
+          <td class="tg-7btt" colspan="3" rowspan="2">1 hora</td>
+          <td class="tg-7btt" colspan="2">5 horas</td>
+        </tr>
+        <tr>
+          <td class="tg-7btt" colspan="2">30 minutos para 75%</td>
+        </tr>
+      </tbody>
+      </table>
+
+      <h1 class="rainbow-text"><strong>Tarea Tablas1</strong></h1>
+
+      <p class="rainbow-text">Tabla 1:</p>
+
+      <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-0pkp{border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-706m{background-color:#009901;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-tw5s{background-color:#fe0000;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-bci8{background-color:#FE0000;border-color:inherit;text-align:left;vertical-align:top}
+        </style>
+        <table class="tg">
+        <thead>
+          <tr>
+            <th class="tg-0pkp" rowspan="2"></th>
+            <th class="tg-0pkp" colspan="2">1ª Eval</th>
+            <th class="tg-0pkp" colspan="2">2ª Eval</th>
+            <th class="tg-0pkp" colspan="2">3ª Eval</th>
+          </tr>
+          <tr>
+            <th class="tg-706m">Aprobados</th>
+            <th class="tg-tw5s">Suspendidos</th>
+            <th class="tg-706m">Aprobados</th>
+            <th class="tg-bci8">Suspendidos</th>
+            <th class="tg-706m">Aprobados</th>
+            <th class="tg-bci8">Suspendidos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-0pkp">Informática</td>
+            <td class="tg-0pkp">20</td>
+            <td class="tg-0pkp">2</td>
+            <td class="tg-0pkp">19</td>
+            <td class="tg-0pkp">3</td>
+            <td class="tg-0pkp">22</td>
+            <td class="tg-0pkp">0</td>
+          </tr>
+          <tr>
+            <td class="tg-0pkp">Matemáticas</td>
+            <td class="tg-0pkp">10</td>
+            <td class="tg-0pkp">12</td>
+            <td class="tg-0pkp">15</td>
+            <td class="tg-0pkp">7</td>
+            <td class="tg-0pkp">12</td>
+            <td class="tg-0pkp">10</td>
+          </tr>
+        </tbody>
+        </table>
+      
+      <p class="rainbow-text">Tabla 2:</p>
+      
+        <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg .tg-3eme{background-color:#fe0000;border-color:#333333;text-align:center;vertical-align:middle}
+          .tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+          .tg .tg-luwk{background-color:#FCFF2F;border-color:inherit;text-align:center;vertical-align:top}
+          .tg .tg-z5d7{background-color:#9a0000;border-color:inherit;text-align:center;vertical-align:middle}
+          .tg .tg-xkqq{background-color:#FE0000;border-color:inherit;text-align:center;vertical-align:middle}
+          .tg .tg-992f{background-color:#FFCCC9;border-color:inherit;text-align:center;vertical-align:top}
+          .tg .tg-t8is{background-color:#009901;border-color:inherit;text-align:center;vertical-align:middle}
+          .tg .tg-n73t{background-color:#ffccc9;border-color:inherit;text-align:center;vertical-align:middle}
+          .tg .tg-ew1g{background-color:#fcff2f;border-color:inherit;text-align:center;vertical-align:middle}
+          </style>
+          <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-9wq8">Horas</th>
+              <th class="tg-9wq8">Lunes</th>
+              <th class="tg-9wq8">Martes</th>
+              <th class="tg-9wq8">Miércoles</th>
+              <th class="tg-9wq8">Jueves</th>
+              <th class="tg-9wq8">Viernes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-9wq8">8:00-9:00</td>
+              <td class="tg-3eme" rowspan="2">Matemáticas</td>
+              <td class="tg-z5d7">Lengua</td>
+              <td class="tg-9wq8">Música</td>
+              <td class="tg-9wq8"></td>
+              <td class="tg-xkqq" rowspan="2">Matemáticas</td>
+            </tr>
+            <tr>
+              <td class="tg-9wq8">9:00-10:00</td>
+              <td class="tg-9wq8">Inglés</td>
+              <td class="tg-9wq8">Inglés</td>
+              <td class="tg-992f">E. Física</td>
+            </tr>
+            <tr>
+              <td class="tg-9wq8">10:00-10:30</td>
+              <td class="tg-t8is" colspan="5">Recreo</td>
+            </tr>
+            <tr>
+              <td class="tg-9wq8">10:30-11:30</td>
+              <td class="tg-n73t">E. Física</td>
+              <td class="tg-9wq8">Valenciano</td>
+              <td class="tg-z5d7" rowspan="2">Lengua</td>
+              <td class="tg-ew1g">Informática</td>
+              <td class="tg-9wq8">Inglés</td>
+            </tr>
+            <tr>
+              <td class="tg-9wq8">11:30-12:30</td>
+              <td class="tg-9wq8">Música</td>
+              <td class="tg-992f">E. Física</td>
+              <td class="tg-xkqq" rowspan="2">Matemáticas</td>
+              <td class="tg-luwk">Informática</td>
+            </tr>
+            <tr>
+              <td class="tg-9wq8">12:30-13:30</td>
+              <td class="tg-9wq8"></td>
+              <td class="tg-luwk">Informática</td>
+              <td class="tg-9wq8"></td>
+              <td class="tg-9wq8"></td>
+            </tr>
+          </tbody>
+          </table>
+    
+      <h1 class="rainbow-text"><strong>Tarea modelo01</strong></h1>
+
+      <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-lboi{border-color:inherit;text-align:left;vertical-align:middle;width:500px}
+        .tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle;}
+        .tg .tg-9wq9{border-color:inherit;text-align:center;vertical-align:middle;width:350px;height:200px}
+        .tg .tg-yz93{border-color:inherit;text-align:right;vertical-align:middle}
+        .tg .tg-uzvj{border-color:inherit;font-weight:bold;text-align:center;vertical-align:middle;width:300px;height:100px}
+        .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top;width:350px}
+      </style>
+      <table class="tg">
+      <thead>
+        <tr>
+          <th class="tg-uzvj"><span style="color:#009901">Lenguaje de Marcas</span></th>
+          <th class="tg-yz93" colspan="2">Asignatura de primer curso</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-9wq8"><img src="html.jpg" alt="html" width="50" height="50"></td>
+          <td class="tg-lboi" colspan="2"><span style="font-weight:bold">HTML</span>:Lenguaje básico para la creación de páginas web</td>
+        </tr>
+        <tr>
+          <td class="tg-9wq8"><img src="css.jpg" alt="css" width="50" height="50"></td>
+          <td class="tg-lboi" colspan="2"><span style="font-weight:bold">CSS</span>:Lenguaje para aplicar estilos a letras, colores, bordes, etc.</td>
+        </tr>
+        <tr>
+          <td class="tg-9wq8"><img src="xml.jpg" alt="xml" width="50" height="50"></td>
+          <td class="tg-lboi" colspan="2"><span style="font-weight:bold">XML</span>:Lenguaje para marcado genérico.</td>
+        </tr>
+        <tr>
+          <td class="tg-9wq8"><img src="mano.jpg" alt="mano" width="50" height="50"></td>
+          <td class="tg-0pky">Otras materias de primero:<br><br>
+              <ol type="i">
+      			<li>Programación</li>
+      			<li>Bases de Datos</li>
+      			<li>Entornos</li>
+                <li>Sistemas</li>
+                <li>Inglés</li>
+   			 </ol>
+          </td>
+          <td class="tg-9wq9"><a href="https://www.iespuertodelacruz.es/" target="_blank" rel="noopener noreferrer">VEN AL INSTITUTO</a></td>
+        </tr>
+      </tbody>
+      </table>
+
+      <h1 class="rainbow-text"><strong>Tarea modelo02</strong></h1>
+
+      <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-lboi{border-color:inherit;text-align:left;vertical-align:middle;width:500px}
+        .tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle;}
+        .tg .tg-9wq9{border-color:inherit;text-align:center;vertical-align:middle;width:350px;height:200px}
+        .tg .tg-yz93{border-color:inherit;text-align:right;vertical-align:middle}
+        .tg .tg-uzvj{border-color:inherit;font-weight:bold;text-align:center;vertical-align:middle;width:300px;height:100px}
+        .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top;width:350px}
+      </style>
+      <table class="tg">
+      <thead>
+        <tr>
+          <th class="tg-uzvj"><span style="color:#009901">Programación</span></th>
+          <th class="tg-yz93" colspan="2">Asignatura de primer curso</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-9wq8"><img src="python.jpg" alt="python" width="50" height="50"></td>
+          <td class="tg-lboi" colspan="2"><span style="font-weight:bold">Python</span>:Lenguaje para empezar</td>
+        </tr>
+        <tr>
+          <td class="tg-9wq8"><img src="java.jpg" alt="java" width="50" height="50"></td>
+          <td class="tg-lboi" colspan="2"><span style="font-weight:bold">Java</span>:Lenguaje más potente y actual.</td>
+        </tr>
+        <tr>
+          <td class="tg-9wq8"><img src="javascript.jpg" alt="javascript" width="50" height="50"></td>
+          <td class="tg-lboi" colspan="2"><span style="font-weight:bold">JavaScript</span>:Lo aprenderás en segundo curso.</td>
+        </tr>
+        <tr>
+          <td class="tg-9wq8"><img src="mano.jpg" alt="mano" width="50" height="50"></td>
+          <td class="tg-9wq9"><a href="https://www.iespuertodelacruz.es/" target="_blank" rel="noopener noreferrer">VEN AL INSTITUTO</a></td>
+          <td class="tg-0pky">Otras materias de primero:<br><br>
+              <ol type="i">
+      			<li>Lenguaje de Marcas</li>
+      			<li>Bases de Datos</li>
+      			<li>Entornos</li>
+            <li>Sistemas</li>
+            <li>Inglés</li>
+   			 </ol>
+          </td>
+        </tr>
+      </tbody>
+      </table>
+
+      <h1 class="rainbow-text"><strong>Tarea asociada a página web con frames</strong></h1>
+
+      <style>
+        .frame {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .top, .bottom {
+            width: 100%;
+            overflow: hidden;
+        }
+        .top {
+            height: 20vh;
+            background-color: white;
+            color: red;
+            font-size: large;
+            text-align: center;
+        }
+        .bottom {
+            height: 10vh;
+            background-color:white; 
+            display:flex; 
+            justify-content:center; 
+            align-items:center; 
+            font-size:x-large
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        iframe{
+            width: 20%;
+            border:none
+        }
+      </style>
+      <div class="frame">
+        <div class="top">
+           <h1 style="color:red;text-align:center;font-size:x-large;"><b>CICLOS DE GRADO SUPERIOR</b></h1>  
+           <p style="text-align:left;display:inline-block;width:33%;"><a href="http://www.gobiernodecanarias.org/educacion/webfp/Scripts/OeCurricular.asp?pincel1=CF3&pincel2=57&pincel3=01#modulos">Administración de sistemas informáticos en Red</a></p>  
+           <p style="text-align:center;display:inline-block;width:33%;"><a href="http://www.gobiernodecanarias.org/educacion/webfp/Scripts/OeCurricular.asp?pincel1=CF3&pincel2=57&pincel3=02#modulos">Desarrollo de aplicaciones multiplataforma</a></p>  
+           <p style="text-align:right;display:inline-block;width:33%;"><a href="http://www.gobiernodecanarias.org/educacion/webfp/Scripts/OeCurricular.asp?pincel1=CF3&pincel2=57&pincel3=03#modulos">Desarrollo de aplicaciones web</a></p>  
+        </div>
+    
+        <div class="content">
+            <iframe src="https://www3.gobiernodecanarias.org/medusa/edublog/iespuertodelacruztelesforobravo/" scrolling=yes></iframe>
+        </div>
+    
+        <div class="bottom">Rafael Martín Mayor</div>
+      </div>
+
+
+      <h1 class="rainbow-text"><strong>Tarea modelo03</strong></h1>
+
+      <style type="text/css">
+      .tt  {border-collapse:collapse;border-spacing:0;text-align:center;margin: 0 auto;width:50%}
+      .tt td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tt th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tt .tt-lbua{border-color:inherit;text-align:left;vertical-align:middle}
+      .tt .tt-0pkk{border-color:inherit;text-align:left;vertical-align:top}
+      </style>
+      <h1 style="font-weight:bold">World of Warcraft: <span style="color:#009901">Clases de personajes</span></h1>
+      <table class="tt">
+      <thead>
+        <tr>
+          <td class="tt-lbua" rowspan="6"><h2><span style="font-weight:bold;color:#009901">Clases con ataques a distancia</span></h2></td>
+          <td class="tt-lbua"><span style="color:#9B9B9B">Razas</span></td>
+          <td class="tt-lbua"><span style="color:#009901">Clases</span></td>
+          <td class="tt-lbua"><span style="color:#9B9B9B">Objetos</span></td>
+          <td class="tt-lbua" rowspan="6">Personajes con ataques cuerpo a cuerpo
+          <ol start="6">
+      	  <li>Monje</li>
+      	  <li>Pícaro</li>
+      	  <li>Caballero de La Muerte</li>
+          <li>Gerrero</li>
+          <li>Paladin</li>
+    	    </ol>
+          </td>
+        </tr>
+        <tr>
+          <td class="tt-0pkk"><img src="brujo.png" alt="brujo" width="100" height="100"></td>
+          <td class="tt-lbua" colspan="2">1.- <span style="text-decoration:underline">Brujo</span>: personaje con ataques a distancia</td>
+        </tr>
+        <tr>
+          <td class="tt-lbua" colspan="2">2.- <span style="text-decoration:underline">Mago</span>: personaje con ataques a distancia</td>
+          <td class="tt-0pkk"><img src="mago.png" alt="mago" width="100" height="100"></td>
+        </tr>
+        <tr>
+          <td class="tt-0pkk"><img src="sacerdote.png" alt="sacerdote" width="100" height="100"></td>
+          <td class="tt-lbua" colspan="2">3.- <span style="text-decoration:underline">Sacerdote</span>: personaje con ataques a distancia</td>
+        </tr>
+        <tr>
+          <td class="tt-lbua" colspan="2">4.- <span style="text-decoration:underline">Cazador</span>: personaje con ataques a distancia</td>
+          <td class="tt-0pkk"><img src="cazador.png" alt="cazador" width="100" height="100"></td>
+        </tr>
+        <tr>
+          <td class="tt-0pkk"><img src="chaman.png" alt="chaman" width="100" height="100"></td>
+          <td class="tt-lbua" colspan="2">5.- <span style="text-decoration:underline">Chamán</span>: personaje con ataques a distancia</td>
+        </tr>
+      </thead>
+      </table>
+
+
+      <h1 class="rainbow-text"><strong>Tarea modelo04</strong></h1>
+
+      <h1 style="font-weight:bold">World of Warcraft: <span style="color:#F00">Clases de personajes</span></h1>
+      <table class="tt">
+      <thead>
+        <tr>
+          <th class="tt-0pkk" colspan="4"><h2><span style="font-weight:bold;color:#F00">Clases con ataques cuerpo a cuerpo</span></h2></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tt-0pkk"><span style="color:#9B9B9B">Razas</span></td>
+          <td class="tt-0pkk"><span style="color:#F00">Clases</span></td>
+          <td class="tt-0pkk"><span style="color:#9B9B9B">Objetos</span></td>
+          <td class="tt-lbua" rowspan="6">Clases con ataques a distancia
+              <ol type="i" start="6">
+              <li>Brujo</li>
+              <li>Mago</li>
+              <li>Sacerdote</li>
+              <li>Cazador</li>
+              <li>Chamán</li>
+              </ol>
+          </td>
+        </tr>
+        <tr>
+          <td class="tt-0pkk"><img src="monje.png" alt="monje" width="80" height="80"></td>
+          <td class="tt-lbua" colspan="2"><span style="font-style:italic">Monje</span>: personaje con ataque cuerpo a cuerpo</td>
+        </tr>
+        <tr>
+          <td class="tt-lbua" colspan="2"><span style="font-style:italic">Pícaro</span>: personaje con ataque cuerpo a cuerpo</td>
+          <td class="tt-0pkk"><img src="picaro.png" alt="picaro" width="80" height="80"></td>
+        </tr>
+        <tr>
+          <td class="tt-0pkk"><img src="caballerodelamuerte.png" alt="caballerodelamuerte" width="80" height="80"></td>
+          <td class="tt-lbua" colspan="2"><span style="font-style:italic">Caballero de la muerte</span>: personaje con ataque cuerpo a cuerpo</td>
+        </tr>
+        <tr>
+          <td class="tt-lbua" colspan="2"><span style="font-style:italic">Gerrero</span>: personaje con ataque cuerpo a cuerpo</td>
+          <td class="tt-0pkk"><img src="guerrero.png" alt="gerrero" width="80" height="80"></td>
+        </tr>
+        <tr>
+          <td class="tt-0pkk"><img src="paladin.png" alt="paladin" width="80" height="80"></td>
+          <td class="tt-lbua" colspan="2"><span style="font-style:italic">Paladín</span>: personaje con ataque cuerpo a cuerpo</td>
+        </tr>
+      </tbody>
+      </table>
+
+
+    </div>
+
+</body>
+</html>
